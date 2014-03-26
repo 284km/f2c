@@ -5,14 +5,60 @@
     <title>Fahrenheit To Centigrade</title>
     <meta name="description" content="Converters from Fahrenheit to centigrade">
     <meta name="viewport" content="width=device-width">
+
+    <style>
+        .content {
+            width: 60%;
+            margin: 0 auto;
+            padding-top: 100px;
+            color: #444;
+        }
+        .right-bottom .github-fork-ribbon {
+            background-color: #090;
+        }
+
+        .right .github-fork-ribbon {
+            background-color: #f80;
+        }
+
+        .left-bottom .github-fork-ribbon {
+            background-color: #333;
+        }
+    </style>
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/github-fork-ribbon/0.1.0/gh-fork-ribbon.css">
   </head>
   <body>
-    <p>Just input the fahrenheit!</p>
-    <div id="f2c">
+
+    <div class="github-fork-ribbon-wrapper right">
+      <div class="github-fork-ribbon">
+        <a href="https://github.com/284km/f2c">Fork me on GitHub</a>
+      </div>
+    </div>
+    <div class="github-fork-ribbon-wrapper left">
+      <div class="github-fork-ribbon">
+        <a href="https://github.com/284km/f2c">Fork me on GitHub</a>
+      </div>
+    </div>
+    <div class="github-fork-ribbon-wrapper right-bottom">
+      <div class="github-fork-ribbon">
+        <a href="https://github.com/284km/f2c">Fork me on GitHub</a>
+      </div>
+    </div>
+    <div class="github-fork-ribbon-wrapper left-bottom">
+      <div class="github-fork-ribbon">
+        <a href="https://github.com/284km/f2c">Fork me on GitHub</a>
+      </div>
+    </div>
+
+    <div id="f2c" class="content">
+      <p>Just input the fahrenheit!</p>
       <h1>
         <input v-model="fahrenheit"></input>
         °F is {{(5 / 9) * (fahrenheit - 32)}} °C</h1>
     </div>
+
+
+
     <script src="http://cdnjs.cloudflare.com/ajax/libs/vue/0.9.3/vue.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/marked/0.3.1/marked.min.js"></script>
     <script>
